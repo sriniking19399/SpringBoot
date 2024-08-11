@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.recipe.RecipeService;
 import com.example.recipe.Recipe;
 
-import java.util.ArrayList;
+import java.util.*;
 
 @RestController
 public class RecipeController {
@@ -41,8 +41,8 @@ public class RecipeController {
     }
 
     @PutMapping("/recipes/{recipeId}")
-    public Recipe updateRecipe(@PathVariable("recipeId") int recipeId, @RequestBody Recipe recipe){
-        return rService.updateRecipe(recipeId,recipe);
+    public Recipe updateRecipe(@PathVariable("recipeId") int recipeId, @RequestBody Recipe recipe) {
+        return rService.updateRecipe(recipeId, recipe);
     }
 
     @DeleteMapping("/recipes/{recipeId}")

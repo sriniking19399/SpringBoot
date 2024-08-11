@@ -4,6 +4,7 @@ package com.example.recipe;
 import java.util.*;
 
 public class Recipe {
+
     private int recipeId;
     private String recipeName;
     private String recipeType;
